@@ -14,21 +14,21 @@ For example, if the function is called with 5, it should return:
 The factorial of 5 is: 120
 
 Code:- 
-def factorial (n):
+ def factorial (n):
 
     if n<2:
         return 1
     else:
         return n * (factorial(n-1))
-
-try:
+    try:
     n = int(input("Enter a integer: "))
     if n < 0:
         print("Factorial is not defined for negative numbers.")
     else:
         result = factorial(n)
         print(f"The factorial of {n} is: {result}")
-except ValueError:
+        
+    except ValueError:
     print("Please enter a valid integer.")
 
 
